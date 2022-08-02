@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form method="post" action="./asetss/backend/recieve.php" id="dataF1"><!--Asociacion a un input-->
+        <fildset>
+            <label for="nombre"  >Nombre</label>
+            <input type="text" id="txF11" name="name" placeholder="Introduce tu nombre" minlenght="3" maxleght="50" required="" title="ojo 👁" tabindex="1"  autofocus="true" autocomplete="off"><br><br>
+            <select name="typeDocument" id="typeDocument">
+                <option value="nada" selected="selected"></option>
+                <option value="cc">Cedula</option>
+                <option value="id">Tarjeta de identidad</option>
+                <option value="ps">Pasaporte</option>
+            </select>
+            <label for="docID">Document</label>
+            <input type="number" id="docID" name="document" placeholder="Tarjeta de identidad" min="2" max="99" tabindex="2">
+            <label for="civilStatus"></label>
+            <input type="radio" name="cStatus" id="eCivil" value="1">Soltero
+            <input type="radio" name="cStatus" id="eCivil" value="2">Casado
+            <input type="radio" name="cStatus" id="eCivil" value="3">Divorciado
+            <input type="radio" name="cStatus" id="eCivil" value="4">Viudo
+        </fildset>
+        <fildset>
+            <legend>Informacion de Estudio y Otros</legend>
+            <label for="color">Color favorito</label>
+            <input type="color" id="color">
+            <label for="file">Archivo</label>
+            <input type="file" id="file">
+            <label for="data">Fecha</label>
+            <input type="date" id="data">
+        </fildset>
+        <hr>
+        <label for="languages">Lenguajes de programacion</label>
+        <select name="languages" id="languages">
+            <optgroup label="Lenguajes tipados">
+                <option value="java">Java</option>
+                <option value="cSharp">C#</option>
+                <option value="c">C++</option>
+            </optgroup>
+            <optgroup label="Lenguajes no tipados">
+                <option value="python">Python</option>
+                <option value="js">JavaScript</option>
+            </optgroup>
+        </select>
+        <fildset>
+            <input type="time" id="time" name="time"><br>
+            <input type="range" id="range" name="rango" min="0" max="100"><br>
+            <input type="tel" id="tel" name="tel" ><br>
+            <input type="" id="" name=""><br>
+            <input type="" id="" name=""><br>
+            <input type="" id="" name=""><br>
+            <input type="" id="" name=""><br>
+            <input type="" id="" name=""><br>
+            <input type="" id="" name=""><br>
+        </fildset>
+        <label for="accept">Terminos y condiciones</label>
+        <input type="checkbox" id="a">
+        <input type="submit" value="Envio de datos"><!--PHP-->        <button id="validar" >Validar</button>
+    </form>
+    <script scr="./asetss/scripts/main.js"></script>
+</body>
+</html>
